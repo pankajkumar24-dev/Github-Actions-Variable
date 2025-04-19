@@ -33,6 +33,8 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world! $Cloud and $greeting and ${{vars.PROJECT_ID}}
             echo "Repositoty Name :${{github.repository}}"
+            echo "work flow name :${{github.workflow}}"
+            echo "Trigger by  :${{github.triggering_actor}}
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
