@@ -35,6 +35,9 @@ jobs:
             echo "Repositoty Name :${{github.repository}}"
             echo "work flow name :${{github.workflow}}"
             echo "Trigger by  :${{github.triggering_actor}}"
+            echo "Ref  :${{ github.ref }}"
+            echo "SHA  :${{ github.sha }}"
+            echo "Actor :${{ github.actor }}"
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
